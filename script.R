@@ -84,6 +84,14 @@ for (acc in experimentAccessions)
 	}
 }
 
+exp=allExps[[acc]];
+rna=exp$rnaseq;
+ass=assays(rna);
+counts=ass$counts;
+parts=rna$organism_part;
+rowindex=1;
+
+
 r=1;for(row in rownames(counts)){c=1;for(col in colnames(counts)){print(paste(row,samplePartList[col],r,c,counts[r,c]));c=c+1;};r=r+1;}
 
 
