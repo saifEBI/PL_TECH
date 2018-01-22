@@ -8,7 +8,7 @@ library("ExpressionAtlas")
 
 sink("output_file", append=TRUE, split=FALSE)
 
-experimentAccessions=c('E-MTAB-513','E-MTAB-4344') # , 'E-MTAB-2836', 'E-MTAB-3716', 'E-MTAB-4344', ''E-MTAB-5214'
+experimentAccessions=c('E-MTAB-513') # , 'E-MTAB-2836', 'E-MTAB-3716', 'E-MTAB-4344', ''E-MTAB-5214'
 allExps=getAtlasData(experimentAccessions)
 
 for (acc in experimentAccessions)
